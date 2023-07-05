@@ -1,0 +1,75 @@
+.EditContractInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    &-Item {
+        padding: 25px 0;
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+    &-MediumDivider {
+        width: 60%;
+        max-width: 60%;
+        margin: 20px auto;
+    }
+    &-Title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+.ApprovedAmount, .AddFundingSection {
+    &-Body {
+        padding: 0;
+    }
+    &-Row {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+    &-Title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &-AddBtnBox {
+        margin-bottom: 20px;
+        &__Active {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.ReducedAmount {
+    &-Title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &-ShowBtn {
+        margin-bottom: 20px;
+        &__Active {
+            margin-bottom: 10px;
+        } 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .EditContractInfo {
+        padding-top: 20px;
+        &-Item {
+            padding: 15px 0;
+            
+        }
+        &-MediumDivider {
+            width: 60%;
+            max-width: 60%;
+            margin: 15px auto;
+        }
+        &-Title {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+    
+}

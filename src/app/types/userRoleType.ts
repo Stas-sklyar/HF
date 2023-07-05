@@ -1,0 +1,1 @@
+export type UserRoleType = "Attorney" | "Client" | "LawFirm" | "Administrator"

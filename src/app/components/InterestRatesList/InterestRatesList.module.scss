@@ -1,0 +1,43 @@
+.InterestRatesList {
+    padding: 60px 30px;
+    &-Title {
+        margin-bottom: 30px;
+    }
+    &-Body {
+        display: flex;
+        justify-content: space-between;
+        max-width: 700px;
+    }
+    &-Item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        &>span {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .InterestRatesList {
+        padding: 35px 20px;
+        &-Title {
+            margin-bottom: 20px;
+        }
+        &-Body {
+            flex-direction: column-reverse;
+            max-width: 100%;
+        }
+        &-AddBtn {
+            margin: 0 0 10px -10px;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .InterestRatesList {
+        &-Item {
+            font-size: 12px;
+        }
+    }
+}

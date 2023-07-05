@@ -1,0 +1,58 @@
+.ContractPage {
+    padding: 0 0 40px 0;
+    position: relative;
+    &-Icons {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 180px;
+        & div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &-EditBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        &>span {
+            margin-bottom: 5px;
+        }
+    }
+    &-DownloadBox {
+        cursor: pointer;
+
+        &--Disabled {
+            cursor: default;
+            opacity: 0.5;
+        }
+        &>span {
+            margin-bottom: 5px;
+        }
+    }
+    &-Divider {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .ContractPage {
+        &-EditBox,
+        &-DownloadBox {
+            margin: 0 10px;
+            &>span {
+                display: none;
+            }
+        }
+        &-Icons {
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+}

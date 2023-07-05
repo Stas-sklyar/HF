@@ -1,0 +1,17 @@
+.AdaptiveMenu {
+    margin-right: 10px;
+    &-Menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+    &-Link {
+        margin: 10px 0;
+    }
+    &-Icon {
+        fill: #fff !important;
+        width: 25px;
+        height: 25px;
+    }
+}

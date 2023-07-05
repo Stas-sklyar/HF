@@ -1,0 +1,63 @@
+.Plaintiff {
+    &-Body {
+        display: flex;
+        flex-direction: column;
+    }
+    &-Title {
+        padding: 20px 0 5px 0;
+    }
+    &-Subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    &-AddPlaintiffSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 470px;
+        margin-bottom: 20px;
+    }
+    &-CreatedPlaintiffSection {
+        display: flex;
+        flex-direction: column;
+    }
+    &-DateOfBirdthLabel {
+        display: flex;
+        flex-direction: column;
+        &>span {
+            margin-bottom: 5px;
+        }
+    }
+    &-Alert {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 600px;
+        
+        & p {
+            color: #B03534;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Plaintiff {
+        &-AddPlaintiffSection {
+            flex-direction: column;
+        }
+        &-DividerText {
+            margin: 15px 0;
+            width: 100%;
+            max-width: 210px;
+            display: block;
+            text-align: center;
+        }
+        &-Alert {
+            & p {
+                font-size: 12px;
+            }
+        }
+    }    
+}

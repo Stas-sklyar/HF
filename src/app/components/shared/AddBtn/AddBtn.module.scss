@@ -1,0 +1,22 @@
+.AddBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 7px;
+    &>button {
+        border: none;
+        background-color: transparent;
+        margin-left: 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .AddBtn {
+        &>button {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+}

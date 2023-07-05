@@ -1,0 +1,88 @@
+.Comment {
+    padding: 30px 0;
+    &-Input {
+        width: 100%;
+        resize: none;
+        border: 1px solid #333;
+        border-radius: 15px;
+        margin-bottom: 15px !important;
+    }
+    &-Item {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0 35px 0;
+        &:last-child {
+            padding: 15px 0 0 0;
+        }
+    }
+    &-Info {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &-TextBody {
+        width: 500px;
+    }
+    &-Title {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &-CommentsContainer {
+        margin-bottom: 30px;
+    }
+    &-Divider {
+        margin-bottom: 40px !important;
+    }
+    &-ControllsBody {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &-AttachmentFileLabel {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 10px;
+    }
+    &-AttachmentFileInput {
+        display: none;
+    }
+    &-Attachments {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        &>span:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    &-Icon {
+        fill: #1D3B60 !important;
+        margin-right: 10px;
+    }
+    &-ClearIcon {
+        fill: #1D3B60 !important;
+        cursor: pointer;
+    }
+    &-AttachmentBox {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Comment {
+        &-Item {
+            padding: 15px 0 35px 0;
+        }
+        &-Input,
+        &-TextBody,
+        &-Info {
+            width: 100%;
+        }
+    }
+}

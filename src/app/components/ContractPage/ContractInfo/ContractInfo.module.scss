@@ -1,0 +1,72 @@
+.ContractInfo {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    &-Col {
+        margin-right: 100px;
+        display: flex;
+        &:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 0;
+        }
+    }
+    &-List {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        & li:last-child {
+            display: flex;
+            align-items: flex-end;
+        }
+        &--AdditionalFunding {
+            margin: 10px 0 20px 0;
+            padding-left: 35px;
+        }
+    }
+    &-Item {
+        display: flex;
+        justify-content: space-between;
+        min-width: 410px;
+        margin-bottom: 10px;
+        &>span:first-child {
+            font-weight: 600;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & div:first-child>span:first-child {
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        &__AdditionalRequest {
+            padding-left: 35px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .ContractInfo {
+        flex-direction: column;
+        &-Col {
+            margin-right: 0;
+        }
+        &-Item {
+            min-width: 0;
+            width: 380px;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .ContractInfo {
+        &-Item {
+            font-size: 12px;
+            display: flex;
+            width: 100%;
+            width: 270px;
+        }
+    }
+}

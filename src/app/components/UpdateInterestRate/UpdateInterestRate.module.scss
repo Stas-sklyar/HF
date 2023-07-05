@@ -1,0 +1,23 @@
+.UpdateInterestRate {
+    padding-top: 70px;
+    &-StateName {
+        font-size: 35px;
+        display: block;
+        margin-bottom: 15px;
+    }
+    &-Body {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .UpdateInterestRate {
+        padding-top: 30px;
+        &-StateName {
+            font-size: 25px;
+        }
+        &-Body {
+            margin-bottom: 20px;
+        }
+    }
+}

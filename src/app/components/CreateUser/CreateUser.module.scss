@@ -1,0 +1,108 @@
+.CreateUser {
+    &-UserData {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 40px 0;
+    }
+    &-Column {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &-AddFirmBtn {
+        padding: 20px 0;
+    }
+    &-BtnBox {
+        text-align: center;
+    }
+}
+
+.CreateUserAddFirm {
+    &-AddFirmBtn {
+        margin: 30px 0;
+    }
+    &-Title {
+        padding-top: 20px;
+    }
+}
+
+.AddFirmSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    &-FormControl {
+        width: 240px;
+        margin-right: 30px !important;
+        margin-bottom: 30px !important;
+    }
+    &-BtnBox {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.CreateUserClients {
+    padding: 30px 0;
+    &-Title {
+        margin-bottom: 20px;
+    }
+}
+
+.CreateUserAddComment {
+    padding: 30px 0;
+    &-Title {
+        margin-bottom: 20px;
+    }
+}
+
+.AddedFirmsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    &-Item {
+        font-size: 18px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &>span:first-child {
+            margin-right: 20px;
+        }
+        &>span:last-child {
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .CreateUser {
+        &-UserData {
+            flex-direction: column-reverse;
+            padding: 40px 0;
+        }
+        &-UserTypeControll {
+            transform: none !important;
+        }
+        &-Column {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .AddedFirmsList {
+        &-Item {
+            font-size: 14px;
+        }
+    }
+}

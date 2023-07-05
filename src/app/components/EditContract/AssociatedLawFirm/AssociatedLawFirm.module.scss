@@ -1,0 +1,41 @@
+.AssociatedLawFirm {
+    padding: 50px 0;
+    &-Title {
+        margin-bottom: 20px;
+    }
+    &-Row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px 0;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    &-Col {
+        width: 25%;
+    }
+    &-AddFirmBtn {
+        margin: 20px 0;
+    }
+    &-AddFirmPanel {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .AssociatedLawFirm {
+        &-Row {
+            flex-direction: column;
+        }
+        &-Col {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.GeneralInfo {
+    padding: 30px 0;
+    &-Title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &-AttorneyItem:last-child,
+    &-LawFirmItem:last-child {
+        margin-bottom: 20px;
+    }
+    &-List {
+        display: flex;
+        flex-direction: column;
+    }
+}

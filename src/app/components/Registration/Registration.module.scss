@@ -1,0 +1,36 @@
+.Registration {
+    max-width: 700px;
+    margin: 60px auto 0 auto;
+    padding-bottom: 50px;
+    &-Title {
+        text-align: center;
+        padding-top: 20px;
+    }
+    &-Form {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    &-Input {
+        margin: 10px 0 !important;
+    }
+    &-Select {
+        margin: 10px 0 !important;
+    }
+    &-Date {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+    }
+    &-DateLabel {
+        margin-right: 20px;
+    }
+    &-Btn {
+        margin: 20px auto 20px auto !important;
+        max-width: 150px;
+        text-transform: none !important;
+    }
+    &-DateInput {
+        width: 170px !important;
+    }
+}

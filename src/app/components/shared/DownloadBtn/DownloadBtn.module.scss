@@ -1,0 +1,19 @@
+.DownloadBtn {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    cursor: pointer;
+    & > div {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .DownloadBtn {
+        & > div {
+            margin-right: 10px;
+            font-size: 12px;
+        }
+    }
+}

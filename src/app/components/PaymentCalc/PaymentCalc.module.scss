@@ -1,0 +1,16 @@
+.PaymentCalc {
+    padding: 50px 0 100px 0;
+    &-Title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &-Body {
+        display: flex;
+        flex-direction: column;
+        max-width: 290px;
+        margin: 0 auto;
+    }
+    &-LoaderBox {
+        text-align: center;
+    }
+}

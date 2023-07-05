@@ -1,0 +1,62 @@
+.StatusHistory {
+    padding: 60px 0 40px 0;
+    &-Title {
+        margin-bottom: 25px;
+    }
+    &-SubTitle {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    &-BtnBox {
+        padding-bottom: 20px;
+    }
+    &-Row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-Item {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    &-Label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        &>span {
+            margin-right: 20px;
+        }
+    }
+}
+
+.AddStatus {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    &-Label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &>span {
+            margin-right: 25px;
+        }
+    }
+    &-Loader {
+        margin-top: -22px;
+    }
+}
+
+.MediumDivider {
+    max-width: 60%;
+    width: 60%;
+    margin: 0 auto;
+}

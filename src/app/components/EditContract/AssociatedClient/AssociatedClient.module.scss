@@ -1,0 +1,90 @@
+.AssociatedClient {
+    padding: 50px 0;
+    &-Title {
+        margin-bottom: 20px;
+    }
+    &-Row {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-Col {
+        display: flex;
+        flex-direction: column;
+    }
+    &-DateLabel {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &>span {
+            margin-right: 7px;
+        }
+    }
+    &-DownloadContainer {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-DownloadSection {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 20px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &-ClientContractFileName {
+        margin-left: 10px;
+    }
+    &-UploadContractBtn {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &-UploadContractIcon {
+        margin-right: 10px;
+        fill: #1D3B60 !important;
+    }
+    &-Loader {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .AssociatedClient {
+        padding: 25px 0;
+
+        &-Title {
+            margin-bottom: 15px;
+        }
+
+        &-Row {
+            margin-bottom: 20px;
+        }
+
+        &-Col {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .AssociatedClient {
+        &-DownloadContainer {
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+        &-Loader {
+            margin-top: 20px;
+        }
+    }
+}

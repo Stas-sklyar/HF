@@ -1,0 +1,49 @@
+.MyLawFirmsContracts {
+  &-Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 20px 0;
+  }
+  &-Search {
+    display: flex;
+    align-items: center;
+  }
+  &-SearchIcon {
+    margin-right: 10px;
+    fill: #1D3B60 !important;
+  }
+  &-CreateNewRequest {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  &-CreateNewRequestIcon {
+    margin-right: 15px;
+    fill: #1D3B60 !important;
+  }
+  &-CreateNewRequestBtn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  &-Title {
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .AllContracts {
+    &-Nav {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 20px 0 20px 0;
+    }
+    &-Search {
+      width: 100%;
+    }
+  }
+}

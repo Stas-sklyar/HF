@@ -1,0 +1,38 @@
+.Comments {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+    &-Label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        & span {
+            margin-right: 30px;
+            font-weight: 600;
+        }
+    }
+    &-CommentInfo {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Comments {
+        padding: 15px 0;
+        &-Label {
+            margin-bottom: 0;
+            & span {
+                margin-right: 10px;
+                font-weight: 600;
+            }
+        }
+        &-CommentInfo {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+    }
+    
+}

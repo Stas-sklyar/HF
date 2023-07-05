@@ -1,0 +1,25 @@
+.CaseInformation {
+    &-Title {
+        padding: 20px 0 20px 0;
+    }
+    &-Body {
+        display: flex;
+        flex-direction: column;
+    }
+    &-Label {
+        margin-bottom: 20px !important;
+        &--Date {
+            display: flex;
+            flex-direction: column;
+            &>span {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &-DateInput {
+        width: 150px !important;
+    }
+    &-Notion {
+        margin-bottom: 15px;
+    }
+}

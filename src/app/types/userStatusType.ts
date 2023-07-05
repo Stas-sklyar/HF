@@ -1,0 +1,1 @@
+export type UserStatusType = "New" | "Approved" | "Rejected"

@@ -1,0 +1,31 @@
+.CasesAndClients {
+    padding: 30px 0;
+    &-List {
+        padding: 15px 0 50px 0;
+        font-size: 16px;
+    }
+    &-Item {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & span:first-child {
+            margin-right: 50px;
+        }
+        & span {
+            font-weight: 600;
+            & a {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .CasesAndClients {
+        padding: 20px 0;
+        &-List {
+            padding: 15px 0 25px 0;
+        }
+    }
+}

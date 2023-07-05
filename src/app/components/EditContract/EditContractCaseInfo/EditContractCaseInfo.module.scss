@@ -1,0 +1,12 @@
+.CaseInformation {
+    &-Title {
+        margin: 20px 0;
+    }
+    &-Body {
+        display: flex;
+        flex-direction: column;
+    }
+    &-Notion {
+        margin-bottom: 15px;
+    }
+}

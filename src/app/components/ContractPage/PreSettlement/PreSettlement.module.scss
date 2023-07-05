@@ -1,0 +1,35 @@
+.PreSettlement {
+    padding: 30px 0;
+    &-Title {
+        margin-bottom: 10px;
+    }
+    &-Item {
+        margin-bottom: 10px;
+        & span:first-child {
+            font-weight: 600;
+            margin-right: 7px;
+        }
+        &__danger {
+            color: rgb(255, 59, 59);
+        }
+    }
+    &-BtnBox {
+        // Temporarily hidden
+        display: none;
+        text-align: center;
+    }
+    &-Body {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .PreSettlement {
+        &-Item {
+            font-size: 12px;
+        }
+        &-BtnBox {
+            text-align: left;
+        }
+    }
+}

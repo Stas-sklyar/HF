@@ -1,0 +1,41 @@
+.PrivacyPolicy {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: justify;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 1em 0;
+
+    & li {
+      margin-left: 20px;
+    }
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+}

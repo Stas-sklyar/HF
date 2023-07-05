@@ -1,0 +1,26 @@
+.CreateContractAttorney {
+    padding: 60px 0;
+    font-size: 16px;
+    &-Title {
+        margin-bottom: 20px;
+    }
+    &-RadioBtns {
+        justify-content: center;
+    }
+    &-Title {
+        text-align: center;
+    }
+    &-Comment {
+        padding: 20px 0;
+    }
+    &-Btns {
+        text-align: center;
+        & button {
+            margin: 0 10px;
+        }
+    }
+    &-AlertText {
+        color: #B03534;
+        font-size: 16px;
+    }
+}

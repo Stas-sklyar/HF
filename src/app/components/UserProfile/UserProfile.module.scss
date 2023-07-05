@@ -1,0 +1,182 @@
+.UserProfile {
+    padding-bottom: 50px;
+
+    &-Body {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 80px 40px 0;
+        position: relative;
+    }
+
+    &-List {
+        margin-bottom: 30px;
+    }
+
+    &-Item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 7px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &>span:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    &-InfoIcon {
+        margin-left: 15px;
+    }
+
+    &-EditIcon {
+        position: absolute;
+        right: 0;
+        top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    &-Avatar {
+        width: 220px;
+        height: 200px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #1D3B60;
+        margin-right: 20px;
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+
+    &-AvatarImgWrapp {
+        position: relative;
+
+        &:hover {
+            & .UserProfile-AvatarNav {
+                opacity: 1;
+                transition: all .2s ease-in;
+            }
+        }
+    }
+
+    &-AvatarImg {
+        width: 100%;
+        max-width: 270px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    &-AvatarNav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding-left: 10px;
+        right: -30px;
+        top: 0;
+        opacity: 0;
+        transition: opacity .2s ease-in;
+        cursor: pointer;
+    }
+
+    &-EditAvatarLabel {
+        cursor: pointer;
+    }
+
+    &-AvatarInput {
+        display: none;
+    }
+
+    &-AvatarLabel {
+        display: flex;
+    }
+
+    &-Ratings {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin: 0 0 15px 0;
+
+        &>svg {
+            margin-right: 10px;
+        }
+
+        &>b {
+            margin-left: 5px;
+        }
+    }
+
+    &-RatingTable {
+        margin-bottom: 30px;
+        max-width: 320px;
+    }
+
+    &--Login {
+        padding: 20px;
+        text-align: center;
+    }
+
+    &-CasesTitle {
+        margin-bottom: 20px;
+    }
+
+    &-Title {
+        margin-bottom: 15px;
+    }
+
+    &-CalculateBtn {
+        width: 200px !important;
+    }
+
+    &-CalculateBtnWrapp {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .UserProfile {
+        &-Body {
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 0 40px 0;
+        }
+
+        &-AvatarBox {
+            padding-right: 40px;
+            max-width: 270px;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .UserProfile {
+        &-Item {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        &-InfoIcon {
+            &>svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &-AvatarImg {
+            max-width: 150px;
+        }
+
+        &-AvatarBox {
+            max-width: 150px
+        }
+    }
+}

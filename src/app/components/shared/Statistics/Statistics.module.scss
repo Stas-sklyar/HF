@@ -1,0 +1,38 @@
+.Statistics {
+    display: flex;
+    flex-direction: column;
+    &-List {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 325px;
+        padding: 20px 0;
+        border: 2px solid #3062A0;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    &-Item {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & span:first-child {
+            font-weight: 600;
+        }
+    }
+    &-Divider {
+        margin: 18px 0 18px 0 !important;
+    }
+    &-Subtitle {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .Statistics {
+        &-Item {
+            font-size: 12px !important;
+        }
+    }
+}

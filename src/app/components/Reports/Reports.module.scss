@@ -1,0 +1,50 @@
+.CreateReport {
+    padding: 50px 0;
+    &-Title {
+        margin-bottom: 50px;
+    }
+    &-Step {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-Subtitle {
+        margin-bottom: 20px;
+    }
+    &-Form:last-child {
+        margin-top: 50px;
+    }
+    &-BlockAccessTitle {
+        padding: 20px;
+        text-align: center;
+    }
+    &-DownloadRawDataContainer {
+        padding: 50px 0;
+    }
+
+    &-BtnContainer {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .CreateReport {
+        padding: 25px 0;
+        &-Title {
+            margin-bottom: 20px;
+        }
+        &-Step {
+            margin-bottom: 40px;
+        }
+        &-Form:last-child {
+            margin-top: 30px;
+        }
+        &-DateInput {
+            width: 100% !important;
+        }
+    }
+}

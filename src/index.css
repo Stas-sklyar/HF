@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'MainText';
+    src: url(./fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'MainTitle';
+    src: url(./fonts/Cuprum-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'MainText' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+*,
+a {
+    font-family: 'MainText' !important;
+    color: #172228;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* ul {
+    margin: 0;
+    overflow: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'MainTitle' !important;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 28px !important;
+}
+
+/* BUTTONS */
+
+.MuiButton-root>.MuiButton-label {
+    font-weight: 600;
+}
+
+.MuiButton-containedPrimary>.MuiButton-label {
+    color: #ffffff;
+}
+
+.MuiButton-containedSecondary>.MuiButton-label {
+    color: #ffffff;
+}
+
+.MuiButton-containedSecondary {
+    background-color: #B03534 !important;
+}
+
+.MuiAlert-root.MuiAlert-filledError {
+    background-color: #EF574E;
+    color: #B7D7E5
+}
+
+.MuiButton-containedPrimary {
+    background-color: #3062A0 !important;
+    border: 1px solid #3062A0 !important;
+}
+
+.MuiButton-outlined>.MuiButton-label {
+    color: #3062A0;
+}
+
+.MuiButton-outlined {
+    border: 1px solid #3062A0 !important;
+}
+
+.Mui-disabled {
+    opacity: 0.6;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked>.MuiIconButton-label>.MuiSvgIcon-root {
+    fill: #3062A0 !important;
+}
+
+.MuiButton-root {
+    font-size: 12px !important;
+}
+
+/* TEXTFIELDS */
+
+.MuiInput-root:hover.MuiInput-underline:after,
+.MuiInput-root.MuiInput-underline:after {
+    border-bottom: 2px solid #3062A0 !important;
+}
+
+.MuiInput-root:hover.MuiInput-underline:before {
+    border-bottom: 2px solid #3062A0 !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: #3062A0 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused,
+.MuiOutlinedInput-notchedOutline {
+    border-color: #3062A0 !important;
+}
+
+.MuiBox-root,
+.MuiMenu-list {
+    outline: none !important;
+}
+
+.MuiPickersDay-daySelected>.MuiIconButton-label {
+    color: #ffffff;
+}
+
+.PrimaryIcon {
+    fill: #1D3B60 !important;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,43 @@
+.InformationPage {
+    padding: 70px 0;
+    &-Body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &-Title {
+        margin-bottom: 40px;
+    }
+    &-Description {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 40px auto;
+    }
+    &-Input {
+        margin-bottom: 40px !important;
+    }
+    &-Link {
+        display: block;
+        text-decoration: none;
+    }
+    &-ContractSupportLink {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .InformationPage {
+        padding: 30px 0;
+        &-Title {
+            margin-bottom: 25px;
+        }
+        &-Description {
+            font-size: 14px;
+            margin: 0 auto 20px auto;
+        }
+        &-Input {
+            margin-bottom: 20px !important;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.UserInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+
+    &-Column {
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .UserInfo {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+
+        &-Column {
+            min-width: 100%;
+        }
+    }
+}
